@@ -6,6 +6,7 @@ landing page
     nav
         logo
         search
+        products
         cart
         profile
     latest products carousel
