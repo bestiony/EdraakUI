@@ -17,12 +17,12 @@ landing page
     DONE:::footer
     
 products 
-    left : 
-        filters 
-    right : 
-        products
+    top : 
+        DONE:::filters 
+    middle : 
+        DONE:::products
     bottom 
-        pagination 
+        DONE:::pagination 
 single product 
     left:
         image
