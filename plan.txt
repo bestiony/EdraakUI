@@ -1,0 +1,98 @@
+ui plan 
+
+customer 
+
+landing page 
+    nav
+        logo
+        search
+        cart
+        profile
+    latest products carousel
+    categories
+    subcategories
+    deals
+    brands : black filter
+    footer
+products 
+    left : 
+        filters 
+    right : 
+        products
+    bottom 
+        pagination 
+single product 
+    left:
+        image
+    right:
+        details
+            name
+            Price
+            size
+            description
+    bottom:
+        pagination
+        related products
+cart 
+    items list{
+        item:
+            name
+            Price
+            quantity
+            total
+            modify quantity
+            delete
+    }
+    proceed to checkout
+add shipping information 
+    left : 
+        previous used addresses if any
+    right: 
+        shipping address form
+orders 
+    orders list{
+        order :
+            id
+            number of items 
+            total
+            status
+    }
+single order 
+    top :
+        left :
+            status 
+            order id 
+        right : 
+            address used 
+    middle :
+        items list {
+            item:: 5X3 card
+                left:
+                    image
+                middle and right :
+                    name
+                    description 
+                    price   quantity 
+                far right : 
+                    total 
+                
+        }
+profile page == single user in admin
+
+
+Admin
+
+orders
+single order 
+products
+single order 
+edit order status 
+categories 
+single category
+edit category
+subcategories
+single subcategory
+edit subcategory
+users 
+single user
+
