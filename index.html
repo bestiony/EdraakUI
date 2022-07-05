@@ -14,34 +14,38 @@
 </head>
 <body>
     <!-- nav bar -->
-    <nav class="shadow-md " >
-        <div class="container mx-auto flex p-6 ">
+    <nav class="shadow-md  relative bg-red-200 z-40 " >
+        <div class="bg-white  shadow-md fixed top-0 left-0 right-0">
+        <div class="container mx-auto bg-white  flex p-6 flex-wrap  ">
             <img src="./images/logo.png" class="h-10 ">
+
             <!-- search -->
-                <form action="" class="flex items-center rounded-md border w-1/2 p-1 
-                border-gray-400 mx-auto ">
-                    <input type="text" name="search" id="" class="w-full p-1 rounded-md  focus:outline-none  ">
-                    <button>
-                        <i class="fa fa-search text-orange-500 mr-1 text-lg " aria-hidden="true"></i>
-                    </button>
-                </form>
+            <form action="" class="flex order-last  items-center rounded-md border w-full md:w-1/2 p-1 
+            border-gray-400 mx-auto ">
+                <input type="text" name="search" id="" class="w-full p-1 rounded-md  focus:outline-none  ">
+                <button>
+                    <i class="fa fa-search text-orange-500 mr-1 text-lg " aria-hidden="true"></i>
+                </button>
+            </form>
+
             <!-- menu -->
-            <ul class="flex p-1 items-center space-x-4 px-4">
+            <ul class="flex p-1 md:order-last ml-auto items-center space-x-4 px-4">
                 <a href="" class="rounded hover:text-orange-500">Products</a>
                 <a href="" class="rounded hover:text-orange-500">Cart</a>
                 <a href="" class="rounded hover:text-orange-500">Profile</a>
             </ul>
+        </div>
         </div>
     </nav>
 
 
 
     <!-- carousel -->
-    <section>
-        <div class="container mx-auto p-6 mt-20">
+    <section class="bg-gray-900 py-10">
+        <div class="container mx-auto p-6 mt-20 bg-white">
             <div class="glide">
                 <div class="glide__track border" data-glide-el="track">
-                  <ul class="glide__slides">
+                    <ul class="glide__slides">
 
                     <li class="glide__slide">
                         <div class="flex flex-col items-center md:flex-row  justify-center p-6">
@@ -53,10 +57,13 @@
                                     The Best Hoodies in Town
                                 </h2>
                                 <hr class=" my-6 md:w-1/2">
-                                <p class="text-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                <p class="text-sm my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                     Amet ullam aperiam architecto ex vero ducimus ipsa eligendi quisquam odit alias sunt, 
                                     voluptates laudantium culpa corrupti, libero saepe esse enim. Exercitationem!</p>
-
+                                <a href="" class="bg-orange-500 hover:bg-orange-400 text-white py-2 px-4 rounded-lg self-end">
+                                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                                    Shop
+                                </a>
                             </div>
                         </div>
                     </li>
@@ -66,12 +73,128 @@
                   </ul>
                 </div>
                 <div class="glide__arrows " data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left bg-orange-500" data-glide-dir="<">prev</button>
-                    <button class="glide__arrow glide__arrow--right bg-orange-500" data-glide-dir=">">next</button>
+                    <button class="glide__arrow glide__arrow--left bg-gray-500" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right bg-gray-500" data-glide-dir=">">next</button>
                   </div>
               </div>
         </div>
     </section>
+    <!-- categories -->
+    <h1 class="text-4xl text-center text-orange-500">
+        Categories
+    </h1>
+    <hr class="w-40 border-orange-500 mx-auto my-4">
+    <section>
+        <div class=" container justify-center flex-col md:flex-row mx-auto flex space-x-4 p-6">
+            <!-- category card -->
+            <div class="p-3 md:w-1/3 flex flex-col justify-center hover:z-0 items-center shadow-md 
+                hover:scale-110 duration-500 hover:border-orange-500 border rounded">
+                <img src="./images/hoodie.jpg" class="w-3/4">
+                <h2 class="text-xl md:text-4xl text-center font-bold">
+                    Men
+                </h2>
+            </div>
+
+            
+
+            
+        </div>
+    </section>
+            <!-- Subcategories -->
+    <h1 class="text-4xl text-center text-orange-500">
+        Subcategories
+    </h1>
+    <hr class="w-40 border-orange-500 mx-auto my-4">
+
+    <section>
+        <div class=" container justify-center flex-col md:flex-row mx-auto flex space-x-4 p-6">
+            <div class="p-3 md:w-1/4 flex flex-col justify-center items-center shadow-md 
+                hover:-translate-y-4 duration-500 hover:border-orange-500 border rounded">
+                <img src="./images/hoodie.jpg" class="w-3/4">
+                <h2 class="text-xl md:text-4xl text-center font-bold">
+                    Men
+                </h2>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Deal -->
+    <section class="bg-black p-6">
+        <div class="container bg-white mx-auto">
+
+            <div class="container mx-auto p-6 flex flex-col md:flex-row justify-center items-center">
+                <!-- left -->
+                <img src="./images/men-deal.png" class="md:w-1/3">
+                <div class="flex flex-col items-center space-y-3">
+                    <h1 class="text-5xl font-bold text-orange-500">%50 OFF</h1>
+                    <h2 class="text-xl md:text-4xl text-center font-bold md:w-1/2">
+                        Get the Best Deals this Aid  
+                    </h2>
+                    <a href="" class="bg-orange-500 hover:bg-orange-400 text-white py-2 px-4 rounded-lg ">
+                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                        Shop
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- brands -->
+    <section class="my-10">
+        <h1 class="text-4xl text-center text-black">
+            Brands
+        </h1>
+        <hr class="w-40 border-black mx-auto my-4">
+
+        <div class="container flex flex-wrap  items-center  mx-auto p-6 justify-center space-x-6">
+            <a target="_blank" class="w-1/3 md:w-1/5" href="                       "><img src="./images/brands/mastor.jpg" class=" hover:shadow-2xl duration-500"></a>
+            <a target="_blank" class="w-1/3 md:w-1/5" href="https://darcollective.com/"><img src="./images/brands/dar.png" class=" hover:shadow-2xl duration-500"></a>
+            <a target="_blank" class="w-1/3 md:w-1/5" href="https://www.emir-store.com/"><img src="./images/brands/emir.png" class=" hover:shadow-2xl duration-500"></a>
+            <a target="_blank" class="w-1/3 md:w-1/5" href="https://tuniqoasis.com/"><img src="./images/brands/TUNIQ.png" class=" hover:shadow-2xl duration-500"></a>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="bg-gray-900">
+        <div class="container flex-col md:flex-row mx-auto justify-between flex items-stretch p-16 ">
+            <!-- left -->
+            <img src="./images/logo-white.png" class="sm:1/2 md:w-1/5 self-center">
+
+            <!-- middle -->
+
+            <div class="md:p-6 text-white flex flex-col md:w-1/3 items-center">
+                <ul class="flex sm:block ">
+                    <li>Products</li> <p class="text-white sm:hidden">|</p>
+                    <li>Contact US</li><p class="text-white sm:hidden">|</p>
+                    <li>Careers </li><p class="text-white sm:hidden">|</p>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <!-- right -->
+            <div class="flex flex-col justify-around items-stretch  content-between md:w-1/3">
+                <h2 class="text-white font-bold text-center my-5">
+                    Follow US
+                </h2>
+                <div class="flex justify-between">
+                    <img src="/images/social/icon-facebook.svg" alt="">
+                    <img src="/images/social/icon-instagram.svg" alt="">
+                    <img src="/images/social/icon-pinterest.svg" alt="">
+                    <img src="/images/social/icon-twitter.svg" alt="">
+                    <img src="/images/social/icon-youtube.svg" alt="">
+                </div>
+            </div>
+            
+        </div>
+        <hr class="border-white md:w-1/3 mx-auto">
+        <p class="py-6 text-white text-center">
+            Copyrights reserved Bestiony 2022
+        </p>
+    </footer>
+
 
 
     <!-- js -->
@@ -79,9 +202,9 @@
     <script src="https://unpkg.com/@glidejs/glide@3.5.2/dist/glide.min.js"></script>
     <script>
         new Glide('.glide',{
-            autoplay: 2000,
-            hoverpause: false,
-            perView: 1
+            // autoplay: 2000,
+            // hoverpause: false,
+            // perView: 1
         }).mount()
     </script>
 

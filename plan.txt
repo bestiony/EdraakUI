@@ -3,18 +3,19 @@ ui plan
 customer 
 
 landing page 
-    nav
-        logo
-        search
-        products
-        cart
-        profile
-    latest products carousel
-    categories
-    subcategories
-    deals
-    brands : black filter
-    footer
+    DONE:::nav
+        DONE:::logo
+        DONE:::search
+        DONE:::products
+        DONE:::cart
+        DONE:::profile
+    DONE:::latest products carousel
+    DONE:::categories
+    DONE:::subcategories
+    DONE:::deals
+    DONE:::brands : black filter
+    DONE:::footer
+    
 products 
     left : 
         filters 
@@ -96,4 +97,11 @@ single subcategory
 edit subcategory
 users 
 single user
+
+
+
+
+https://darcollective.com/
+https://www.emir-store.com/
+https://tuniqoasis.com/
 
