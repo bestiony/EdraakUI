@@ -12,7 +12,7 @@
 
     <title>Document</title>
 </head>
-<body>
+<body class="flex flex-col min-h-screen bg-gray-100">
     <!-- nav bar -->
     <nav class="shadow-md  relative bg-red-200 z-40 " >
         <div class="bg-white  shadow-md fixed top-0 left-0 right-0">
@@ -38,113 +38,86 @@
         </div>
     </nav>
 
+    <!-- cart -->
+<section class="pt-36  ">
+<div class="container mx-auto p-6 bg-white ">
+    <h1 class="font-bold text-4xl text-center p-6">Shopping Cart</h1>
+    <table class="w-full text-left">
+        <thead class="border-b">
+            <tr>
+            <th class="w-1/2">Products</th>
+            <th class="w-1/4">Quantity</th>
+            <th class="w-1/4">Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-b h-36">
+                <td class="flex h-36 p-3 flex-col md:flex-row items-start ">
+                    <img 
+                    src="https://m.media-amazon.com/images/I/91+C0dnunPL._AC_UL1500_.jpg"
+                    class ="h-full">
+                    <div class="flex flex-col justify-center space-y-2">
+                        <p class="font-bold hidden sm:block">Journeyman Shirt Jacket</p>
+                        <p>Price: $52.20 </p>
 
-    <!-- top -->
+                    </div>
+
+                </td>
+                <td >
+                    <div class="flex flex-col md:flex-row  ">
+
+                    <!-- modify -->
+                    <form action="" class="md:w-1/2 flex justify-end space-x-2">
+                        <input class="p-2 w-16 text-center  outline-orange-400 border-2 my-1
+                        rounded-sm shadow" 
+                        type="number" name="quantity" id="quantity " value="1" min="0">
+                        <button class="bg-blue-500 text-white  px-3 py-2 w-20 my-1
+                        hover:bg-blue-300">Modify</button>
+                    </form>
+                    <!-- remove -->
+                    <form action="" class=" flex justify-end ">
+                        <button class="bg-red-500 text-white px-3 py-2 ml-1 my-1
+                        hover:bg-red-300">Remove</button>
+                    </form>
+                    </div>
+                </td>
+                <td>
+                    $1000
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
     
-    <section class="pt-32 pb-8">
-        
-        <!-- filters -->
-        <div class="container sm:w-1/2 lg:w-full  flex flex-col 
-        lg:flex-row mx-auto p-6 rounded border justify-around">
-        <h3 class="font-bold text-lg mx-4">
-            Filter
-        </h3>
-            <!-- category -->
-            <form action="index.html" 
-            class="border mx-4 lg:w-1/6 flex">
-            <label class="p-1" for="category">category :</label>
-                <select
-                class="w-auto p-1"
-                name="category" id="category" onchange="this.form.submit()">
-                    <option value="">all</option>
-                    <option value="1">Men</option>
-                    <option value="2">Women</option>
-                    <option value="3">Kids</option>
-                </select>
-            </form>
-
-            <!-- category -->
-            <form action="index.html" 
-            class="border mx-4 lg:w-1/6 flex">
-            <label class="p-1" for="category">Subcategory :</label>
-                <select
-                class="w-auto p-1"
-                name="category" id="category" onchange="this.form.submit()">
-                    <option value="">all</option>
-                    <option value="1">Men</option>
-                    <option value="2">Women</option>
-                    <option value="3">Kids</option>
-                </select>
-            </form>
-            <!-- size -->
-            <form action="index.html" 
-            class="border mx-4  lg:w-1/6 flex">
-            <label class="p-1" for="category">Size :</label>
-                <select
-                class="w-auto p-1"
-                name="category" id="category" onchange="this.form.submit()">
-                    <option value="">all</option>
-                    <option value="1">Men</option>
-                    <option value="2">Women</option>
-                    <option value="3">Kids</option>
-                </select>
-            </form>
-
-            <!-- price -->
-            <form action="index.html" 
-            class="border mx-4 lg:w-1/6 flex space-x-3">
-            <label class="p-1" for="category">Price :</label>
-            <input placeholder=" min" 
-                class="px-1 text-center shadow-inner w-14" type="number" 
-                name="min" id="min">
-            <input placeholder=" max" 
-                class="px-1 text-center shadow-inner w-14" type="number" 
-                name="max" id="max">
-            
-            </form>
-        </div>
-        
-        
-
-    </section>
-
-    <!-- products -->
-    <section>
-        <!-- sort by -->
-        <!-- products -->
-        <div class="container mx-auto py-6 flex md:space-x-3">
-            <!-- product card -->
-            <div class="flex flex-col p-3 w-1/4 border overflow-hidden  
-                shadow-md hover:-translate-y-2 duration-300">
-                <a href="">
-                <img src="https://m.media-amazon.com/images/I/91+C0dnunPL._AC_UL1500_.jpg" alt="">
-                <h4 class="font-bold text-md ">
-                    Journeyman Shirt Jacket
-                </h4>
-                </a>
-                <p class="text-ellipsis overflow-hidden h-6">Legendary Whitetails Men's Journeyman Shirt Jacket </p>
-                <p class="font-bold"> $ 52.20 </p>
-                <a href="" class="relative hover:text-orange-500">
-                    <i class="fa fa-cart-plus absolute bottom-0 right-0" aria-hidden="true"></i>
-                </a>
-            </div>
-
-            
-
-            
-
-            
-        </div>
-    </section>
+</div>
+<div class="flex justify-end container my-10">
+    <div class=" p-6 bg-white">
+        <p class="text-xl py-2">Items : <span class="font-bold">1</span></p>
+        <p class="text-xl py-2 mb-2">Total : <span class="font-bold">$500</span></p>
+        <a href="" class="rounded bg-orange-500 py-2 px-4 
+         text-white hover:bg-orange-300">
+         Proceed to Checkout</a>
+    </div>
+</div>
+</section>
 
 
 
+<div class="flex flex-col items-center container bg-white mx-auto my-20 p-4">
+    <img src="/images/empty-cart.png" alt=""     style="filter: invert(43%) sepia(98%) saturate(763%) hue-rotate(351deg) brightness(99%) contrast(97%);"
+    >
+    <p class="text-5xl mb-10">Cart is empty</p>
+    <a href="" class="rounded bg-orange-500 text-white px-4 py-2 text-lg">
+        Check our products!
+    </a>
+</div>
 
 
 
+    
         <!-- footer -->
 
-        <footer class="bg-gray-900 ">
+        <footer class="bg-gray-900 mt-auto ">
             <div class="container flex-col md:flex-row mx-auto justify-between flex items-stretch p-16 ">
                 <!-- left -->
                 <img src="./images/logo-white.png" class="sm:1/2 md:w-1/5 self-center">

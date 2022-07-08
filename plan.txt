@@ -25,16 +25,15 @@ products
         DONE:::pagination 
 single product 
     left:
-        image
+        DONE:::image
     right:
-        details
+        DONE:::details
             name
             Price
             size
             description
     bottom:
-        pagination
-        related products
+        DONE:::related products
 cart 
     items list{
         item:
